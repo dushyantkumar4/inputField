@@ -86,7 +86,7 @@ const InputField: React.FC<InputFieldProps> = ({
               } as React.ChangeEvent<HTMLInputElement>)
             }
             className="absolute -right-19 text-gray-400 dark:text-gray-500 border rounded px-3 py-1 ml-5"
-            // aria-label="Clear input"
+            
           >
             clear
           </button>

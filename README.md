@@ -67,5 +67,25 @@ export default tseslint.config([
   },
 ])
 ```
+# Tailwind setup 
+npm install -D tailwindcss @tailwindcss/vite
+
+// vite.config.ts
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+})
+/* src/index.css */
+@import "tailwindcss";
+
+/* your own globals can go below */
+:root { }
+
+# npm run dev
+
 
 I created stories showing different variants (outlined, filled, ghost), sizes, states (disabled, loading), as well as password toggle and error states. This allows anyone to visually test the component, explore its props, and verify dark/light theme support
+
