@@ -67,25 +67,31 @@ export default tseslint.config([
   },
 ])
 ```
-# Tailwind setup 
-npm install -D tailwindcss @tailwindcss/vite
+# UI Components Assignment
 
-// vite.config.ts
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
+## Live Demo
+https://vercel.com/dushyant-s-projects-72a65b0b/input-field
 
-export default defineConfig({
-  plugins: [react(), tailwindcss()],
-})
-/* src/index.css */
-@import "tailwindcss";
-
-/* your own globals can go below */
-:root { }
-
-# npm run dev
+## GitHub Repo
+https://github.com/dushyantkumar4/inputField
 
 
-I created stories showing different variants (outlined, filled, ghost), sizes, states (disabled, loading), as well as password toggle and error states. This allows anyone to visually test the component, explore its props, and verify dark/light theme support
+
+---
+
+### Components
+- **InputField**
+  - Variants: outlined, filled, ghost
+  - Sizes: sm, md, lg
+  - States: disabled, loading, error
+  - Password toggle
+  - Dark/light theme support
+
+---
+
+### Tech
+- React + TypeScript + Vite
+- Tailwind CSS v4
+- Storybook (for visual testing)
+
 
